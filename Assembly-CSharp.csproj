@@ -82,6 +82,7 @@
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleSprite.cs" />
     <Compile Include="Assets\Scripts\Dialogue\DialogueObject.cs" />
     <Compile Include="Assets\Scripts\Interaction\Key.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
     <Compile Include="Assets\Scripts\WaterWaveEffect.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
     <Compile Include="Assets\Scripts\Interaction\Interaction.cs" />

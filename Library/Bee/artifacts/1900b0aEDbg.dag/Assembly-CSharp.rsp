@@ -391,6 +391,7 @@
 "Assets/DOTween/Modules/DOTweenModuleUI.cs"
 "Assets/DOTween/Modules/DOTweenModuleUnityVersion.cs"
 "Assets/DOTween/Modules/DOTweenModuleUtils.cs"
+"Assets/Scripts/AudioManager.cs"
 "Assets/Scripts/CursorManager.cs"
 "Assets/Scripts/Dialogue/DialogueManager.cs"
 "Assets/Scripts/Dialogue/DialogueObject.cs"
