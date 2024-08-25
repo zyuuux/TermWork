@@ -4,11 +4,34 @@ using UnityEngine;
 
 public class Interaction : MonoBehaviour
 {
-    public bool inInvestigate;
-    public bool canPick;
+    public string interactionName;
+    public bool isInteractable = true;
 
+    // 当玩家与物品交互时调用  
     public virtual void OnInteract()
     {
-        Debug.Log("点击交互物品：" + name);
+        if (!isInteractable) return;
+
+        Debug.Log("Interact with the" + name);
+        Perform();  
+    }
+
+    // 双击鼠标事件
+    public virtual void OnDoubleInteract()
+    {
+        if (!isInteractable) return;
+
+        Debug.Log("Double Interact with the" + name);
+        DoublePerform();
+    }
+
+    protected virtual void Perform()
+    {
+        
+    }
+
+    protected virtual void DoublePerform()
+    {
+
     }
 }

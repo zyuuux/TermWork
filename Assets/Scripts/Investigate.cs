@@ -7,7 +7,7 @@ public class Investigate : Singleton<Investigate>
 {
     public Transform room;
     public GameObject[] characters;
-    Camera camera;
+    new Camera camera;
     bool isInvestigate = false;
 
     public bool IsIsInvestigate()

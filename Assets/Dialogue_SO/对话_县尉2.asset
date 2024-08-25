@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 349da30003e0e134492c81e37aa59e94, type: 3}
+  m_Name: "\u5BF9\u8BDD_\u53BF\u5C092"
+  m_EditorClassIdentifier: 
+  dialogueNodes:
+  - name: "\u5C11\u537F"
+    content: "\u5927\u7406\u5BFA\u529E\u6848\uFF01\u6709\u6CA1\u6709\u4EBA\u5728\uFF01"
+    options: []
+    isEnd: 0
+  - name: "\u53BF\u5C091"
+    content: "\u5728\u7684\u5728\u7684\u5927\u4EBA\uFF0C\u8BF7\u95EE\u8FD9\u662F\u4E3A\u4E86\u4F55\u4E8B\u800C\u524D\u6765\u554A\uFF1F"
+    options: []
+    isEnd: 0
+  - name: "\u5C11\u537F"
+    content: "\u4E3A\u4F55\u800C\u6765\uFF1F"
+    options: []
+    isEnd: 0
+  - name: "\u5927\u7406\u5BFA\u5C11\u537F"
+    content: "\u5E84\u53BF\u4E1E\u90FD\u5931\u8E2A\u4E86\u6570\u5341\u4F59\u5929\u4E86\uFF0C\u96BE\u9053\u4F60\u4E0D\u89C9\u5F97\u5947\u602A\uFF1F"
+    options: []
+    isEnd: 0
+  - name: "\u5C11\u537F"
+    content: "\u751A\u81F3\u8FD8\u6709\u5DE5\u592B\u5728\u8FD9\u91CC\u5077\u61D2\u7761\u89C9\uFF1F\u8FD9\u50CF\u4EC0\u4E48\u8BDD\uFF1F"
+    options: []
+    isEnd: 0
+  - name: "\u53BF\u5C091"
+    content: "\u5927\u4EBA\u83AB\u7740\u6025\uFF0C\u5E84\u53BF\u4E1E\u81EA\u4ECE\u534A\u5E74\u524D\u4E0A\u4EFB\u4EE5\u6765\u4E00\u76F4\u8BA4\u771F\u8D1F\u8D23\uFF0C\u4F53\u6064\u6C11\u60C5\uFF0C\u80AF\u5B9A\u662F\u56E0\u4E3A\u6709\u4EC0\u4E48\u8981\u7D27\u4E4B\u4E8B\u624D\u6545\u610F\u6D88\u5931\u7684\u3002"
+    options: []
+    isEnd: 0
+  - name: "\u5C11\u537F"
+    content: "\u5E84\u53BF\u4E1E\u81EA\u4E0A\u4EFB\u4EE5\u6765\u6709\u6CA1\u6709\u4E0E\u4EC0\u4E48\u4EBA\u7ED3\u8FC7\u4EC7\u6216\u8005\u4EA7\u751F\u8FC7\u53E3\u89D2\uFF1F"
+    options: []
+    isEnd: 0
+  - name: "\u53BF\u5C091"
+    content: "\u8FD9\u5012\u662F\u6CA1\u6709\u542C\u8BF4\u8FC7\uFF0C\u5E84\u53BF\u4E1E\u4E00\u76F4\u90FD\u5F88\u548C\u5584\uFF0C\u5E94\u8BE5\u662F\u4E0D\u4F1A\u4E0E\u4EBA\u4EA7\u751F\u4E89\u6267\u7684\u3002"
+    options: []
+    isEnd: 1

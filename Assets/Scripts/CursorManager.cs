@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class CursorManager : Singleton<CursorManager>
 {
-    public GameObject interactionPanel;
-    public Transform pick;
-    private string interactionName;
+    public List<GameObject> UIPanels;
+    private float clickTime;
 
     void Update()
     {
@@ -22,25 +21,26 @@ public class CursorManager : Singleton<CursorManager>
             if (hit && hit.transform.CompareTag("Interaction"))
             {
                 Interaction i = hit.transform.GetComponent<Interaction>();
-                if (i.inInvestigate == Investigate.Instance.IsIsInvestigate())
+
+                if ((Time.realtimeSinceStartup - clickTime) < 0.2f)
+                {
+                    i.OnDoubleInteract();
+                }
+                else
                 {
                     i.OnInteract();
-                    interactionName = i.name;
-                    if (i.canPick)
+                    clickTime = Time.realtimeSinceStartup;
+                }                  
+            }
+            else
+            {
+                foreach (GameObject p in UIPanels)
+                {
+                    if (p != null)
                     {
-                        pick = i.transform;
+                        p.gameObject.SetActive(false);
                     }
                 }
-            }
-
-            if (Input.GetMouseButtonDown(0))
-            {
-                if ((hit == false || !hit.transform.CompareTag("Interaction")) && interactionPanel.activeInHierarchy)
-                {
-                    interactionPanel.transform.Find(interactionName).gameObject.SetActive(false);
-                    interactionPanel.SetActive(false);
-                    interactionName = string.Empty;
-                }             
             }
         }
     }
