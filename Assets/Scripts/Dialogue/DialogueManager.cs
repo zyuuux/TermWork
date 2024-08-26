@@ -14,6 +14,7 @@ public class DialogueManager : Singleton<DialogueManager>
     private Text dialogueName;
     private Text dialogueContent;
     private int index;
+    private bool isEnd;
 
     public void SetDialogue(DialogueObject dialogue)
     {
@@ -43,8 +44,9 @@ public class DialogueManager : Singleton<DialogueManager>
             }
 
             //对话播放完，关闭对话
-            if (index == curDialogue.dialogueNodes.Length)
+            if (index == curDialogue.dialogueNodes.Length || isEnd)
             {
+                isEnd = false;
                 curDialogue = null;
                 dialogueBar.gameObject.SetActive(false);
                 index = 0;
@@ -68,6 +70,11 @@ public class DialogueManager : Singleton<DialogueManager>
             else
             {
                 dialogueOption.gameObject.SetActive(false);
+            }
+
+            if (node.isEnd)
+            {
+                isEnd = true;
             }
         }       
     }

@@ -49,9 +49,9 @@ TagManager:
   - name: UI
     uniqueID: 940241209
     locked: 0
-  - name: Player
-    uniqueID: 2747165937
-    locked: 0
   - name: Interation
     uniqueID: 1913614957
+    locked: 0
+  - name: Player
+    uniqueID: 2747165937
     locked: 0
